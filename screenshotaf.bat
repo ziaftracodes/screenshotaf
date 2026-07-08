@@ -33,6 +33,7 @@ if %errorlevel% neq 0 (
 
 :RunApp
 echo [INFO] Starting Dashboard server...
+set NODE_PATH=%CD%\node_modules
 node "%TEMP_JS%" "%CD%"
 pause
 exit /b 0
