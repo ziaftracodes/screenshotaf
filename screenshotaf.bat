@@ -6,8 +6,7 @@ node -v >nul 2>&1
 if %errorlevel% neq 0 goto NoNode
 
 :: Define remote script URL and local temp path
-:: UPDATE THIS URL to point to your raw screenshotaf.cjs on GitHub
-set SCRIPT_URL=https://raw.githubusercontent.com/YOUR_GITHUB_USERNAME/screenshotaf/main/screenshotaf.cjs
+set SCRIPT_URL=https://raw.githubusercontent.com/ziaftracodes/screenshotaf/main/screenshotaf.cjs
 set TEMP_JS=%TEMP%\screenshotaf.cjs
 
 :: Check specifically for playwright in node_modules
